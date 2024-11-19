@@ -1,0 +1,64 @@
+body {
+  background-image: url(./asstes/pixelcut-export.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* ............Plane 1............ */
+
+.img {
+  background-image: url(./asstes/airplane2.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: relative;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+  animation-timing-function: ease-out;
+}
+
+/* ..........Plane 2...........*/
+
+.img2{
+    background-image: url(./asstes/airplane.png);
+    background-size: 300px;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: relative;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-name: plane;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+  animation-timing-function: ease-in;
+
+
+}
+/* ............Plane 1............ */
+
+@keyframes move {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 100%;
+    top: 350px;
+  }
+}
+/* ..........Plane 2...........*/
+
+@keyframes plane {
+    from {
+      
+      left: 120%;
+      top: 300px;
+    }
+    to {
+      left: 0;
+      top: 0;
+    }
+  }
